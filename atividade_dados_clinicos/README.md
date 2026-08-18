@@ -1,5 +1,11 @@
 # Modelagem Experimental — Árvore de Decisão
 
+## Alunos:
+
+Thiago Plancke 
+Kauê Lima
+Vladimir Queiroz 
+
 ## 1. Objetivo
 
 Nesta atividade foi realizada uma primeira modelagem experimental utilizando uma árvore de decisão aplicada a um conjunto de dados clínicos relacionados a doenças cardíacas.
