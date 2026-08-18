@@ -2,9 +2,9 @@
 
 ## Alunos:
 
-Thiago Plancke 
-Kauê Lima
-Vladimir Queiroz 
+Thiago Plancke, 
+Kauê Lima, 
+Vladimir Queiroz, 
 
 ## 1. Objetivo
 
