@@ -2,7 +2,7 @@ import pandas
 import matplotlib.pyplot as plt
 from sklearn import tree
 
-df = pandas.read_csv("data/heart_disease.csv")
+df = pandas.read_csv("atividade_dados_clinicos\data\heart_disease.csv")
 df_limpo = df.dropna()
 
 traducao_colunas = {
