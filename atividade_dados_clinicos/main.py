@@ -1,6 +1,5 @@
 import pandas
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
 from sklearn import tree
 
 df = pandas.read_csv("data/heart_disease.csv")
@@ -83,29 +82,16 @@ y = df_limpo[target]
 
 X = df_limpo[features]
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X,
-    y,
-    test_size=0.2,
-    random_state=42
-)
+
 
 
 model = tree.DecisionTreeClassifier(max_depth=6,
 random_state = 42)
 
 
-model.fit(X_train, y_train)
+model.fit(X,y)
 
 
-previsoes = model.predict(X_test)
-
-
-from sklearn.metrics import accuracy_score
-
-acuracia = accuracy_score(y_test, previsoes)
-
-print(acuracia)
 
 plt.figure(dpi=400)
 
