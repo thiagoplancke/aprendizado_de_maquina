@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn import tree
 import  matplotlib.pyplot as plt
-df = pd.read_parquet("data/dados_clones.parquet")
+df = pd.read_parquet("star_wars_ml\data\dados_clones.parquet")
 
 print(df.columns)
 
@@ -38,11 +38,13 @@ random_state = 42)
 model.fit(X, y)
 
 
-plt.figure(dpi=400)
-
-tree.plot_tree(model,
-               feature_names= features,
-               class_names= model.classes_,
-               filled = True)
-
+plt.figure(figsize=(25, 12), dpi=100)
+tree.plot_tree(
+    model,
+    feature_names=features,
+    class_names=model.classes_,
+    filled=True,
+    rounded=True,
+    fontsize=8
+)
 plt.show()
